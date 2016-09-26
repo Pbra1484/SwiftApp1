@@ -33,13 +33,28 @@ class ViewController: UIViewController
     @IBAction func buttonThingClick(sender: UIButton)
     {
         lable1.text = "You clicked the BUTTON!"
-        lable1.textColor = UIColor.clearColor()
+        lable1.textColor = makeRandomColor()
         
     }
 
     @IBAction func slideingSlides(sender: UISlider)
     {
         
+    }
+    private func makeRandomColor() -> UIColor
+    {
+        let randomColor : UIColor
+        
+        //swifts color are persets
+        
+        let redColor :CGFloat = CGFloat(drand48())
+        let greenColor :CGFloat = CGFloat(Double(arc4random_uniform(256))/(255.00))
+        let blueColor :CGFloat = CGFloat(drand48())
+        let alphaChannel :CGFloat = 1.0
+        
+        randomColor = UIColor(red: redColor, gree: greenColor, blue: blueColor, alpha: alphaChannel)
+        
+        return randomColor
     }
 }
 
