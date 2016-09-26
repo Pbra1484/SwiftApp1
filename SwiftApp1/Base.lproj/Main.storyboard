@@ -17,34 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-ku-ct7">
-                                <rect key="frame" x="9" y="212" width="118" height="31"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="241" y="179" width="118" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="slideingSlides:" destination="BYZ-38-t0r" eventType="valueChanged" id="rhO-en-sRc"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yuklfvlo'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Win-K2-6Wa">
                                 <rect key="frame" x="300" y="212" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="210" y="247" width="181" height="21"/>
+                                    <rect key="frame" x="55" y="247" width="301" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wi9-jF-a6P">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="75" y="140" width="46" height="30"/>
+                                    <rect key="frame" x="84" y="523" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonThingClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUb-x6-qgs"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-ku-ct7">
+                                <rect key="frame" x="9" y="212" width="118" height="31"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="76" y="173" width="118" height="31"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="186" width="118" height="31"/>
+                                </variation>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -59,6 +59,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="appBackground" destination="8bC-Xf-vdC" id="szF-tu-sga"/>
                         <outlet property="buttonThing" destination="Wi9-jF-a6P" id="1Nx-Qy-pLq"/>
                         <outlet property="lable1" destination="Win-K2-6Wa" id="0Ot-Ke-sa5"/>
                         <outlet property="slideing" destination="JMc-ku-ct7" id="9ef-Uf-KbS"/>

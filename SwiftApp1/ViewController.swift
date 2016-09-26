@@ -17,6 +17,7 @@ class ViewController: UIViewController
     
     @IBOutlet weak var buttonThing: UIButton!
     
+    @IBOutlet weak var appBackground: UIView!
     
     override func viewDidLoad()
     {
@@ -34,6 +35,7 @@ class ViewController: UIViewController
     {
         lable1.text = "You clicked the BUTTON!"
         lable1.textColor = makeRandomColor()
+        appBackground.backgroundColor = makeRandomColor()
         
     }
 
@@ -52,7 +54,7 @@ class ViewController: UIViewController
         let blueColor :CGFloat = CGFloat(drand48())
         let alphaChannel :CGFloat = 1.0
         
-        randomColor = UIColor(red: redColor, gree: greenColor, blue: blueColor, alpha: alphaChannel)
+        randomColor = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: alphaChannel)
         
         return randomColor
     }
