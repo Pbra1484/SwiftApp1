@@ -33,7 +33,13 @@ class ViewController: UIViewController
     @IBAction func buttonThingClick(sender: UIButton)
     {
         lable1.text = "You clicked the BUTTON!"
+        lable1.textColor = UIColor.clearColor()
+        
     }
 
+    @IBAction func slideingSlides(sender: UISlider)
+    {
+        
+    }
 }
 
